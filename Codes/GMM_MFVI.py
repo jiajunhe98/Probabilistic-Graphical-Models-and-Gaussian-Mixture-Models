@@ -8,35 +8,54 @@ def dnorm(x, mu, sigma):
 
 
 class GMM_MFVI:
+    """
+    GMM by Mean Field Variational Inference.
 
-    def __init__(self, n_cluster):
+    Methods:
+        fit(data, max_iter): Fit the model to data.
+        predict(x): Predict cluster labels for x.
+    """
 
-        self.n_cluster = n_cluster
+    def __init__(self, n_clusters):
+        """
+        Constructor Methods:
+
+        Args:
+            n_clusters(int): number of clusters.
+        """
+
+        self.n_clusters = n_clusters
 
         self.pi = None
-        self.mus = [None] * self.n_cluster
-        self.sigmas = [None] * self.n_cluster
+        self.mus = [None] * self.n_clusters
+        self.sigmas = [None] * self.n_clusters
 
     def fit(self, data, max_iter=200):
+        """
+        Fit the model to data.
+
+        Args:
+            data: Array-like, shape (n_samples, n_dim)
+            max_iter(int): maximal times of iterations
+        """
 
         assert data.ndim == 2
-        n_sample = data.shape[0]
         n_dim = data.shape[1]
 
         # Set prior distribution
-        alpha = np.full((self.n_cluster, ), 2)     # Dirichlet Prior
+        alpha = np.full((self.n_clusters, ), 2)     # Dirichlet Prior
         mu0, lambd, scale, df = np.zeros(n_dim), 1, np.eye(n_dim), n_dim     # NIW Prior
 
         # Initialization z
-        z = self.initialization(data)
+        z = self._initialization(data)
 
         for iter in range(max_iter):
             # Update pi as the mode of Dirichlet distribution
-            self.pi = alpha + np.array([np.sum(z == i) for i in range(self.n_cluster)]) - 1
+            self.pi = alpha + np.array([np.sum(z == i) for i in range(self.n_clusters)]) - 1
             self.pi = self.pi / np.sum(self.pi)
 
             # Update mu, sigma as the mode of NIW distribution
-            for cluster in range(self.n_cluster):
+            for cluster in range(self.n_clusters):
                 samples = data[z == cluster, :]
                 n = samples.shape[0]
                 mean = np.mean(samples, axis=0, keepdims=True) if n != 0 else None
@@ -58,22 +77,32 @@ class GMM_MFVI:
         return self
 
     def predict(self, x):
+        """
+        Predict cluster labels for x.
+
+        Args:
+            x: Array-like, shape (n_samples, n_dim)
+        Return:
+            Array-like, shape (n_samples, )
+        """
         log_prob = [dnorm(x, self.mus[cluster], self.sigmas[cluster]) + np.log(self.pi[cluster])
-                     for cluster in range(self.n_cluster)]
+                     for cluster in range(self.n_clusters)]
         log_prob = np.vstack(log_prob)
         z = np.argmax(log_prob, axis=0)
         return z
 
-    def initialization(self, data, max_iter=100):
-
-        means = data[np.random.choice(data.shape[0], self.n_cluster, replace=False)]    # pick random samples as center
+    def _initialization(self, data, max_iter=100):
+        """
+        Initialization by K-Means.
+        """
+        means = data[np.random.choice(data.shape[0], self.n_clusters, replace=False)]    # pick random samples as center
         z = np.zeros(data.shape[0])
 
         for iter in range(max_iter):
-            dist = [np.sum((data - means[cluster]) ** 2, axis=1) for cluster in range(self.n_cluster)]
+            dist = [np.sum((data - means[cluster]) ** 2, axis=1) for cluster in range(self.n_clusters)]
             dist = np.vstack(dist)
             z = np.argmin(dist, axis=0)
-            means = [np.mean(data[z == cluster], axis=0) for cluster in range(self.n_cluster)]
+            means = [np.mean(data[z == cluster], axis=0) for cluster in range(self.n_clusters)]
 
         return z
 
