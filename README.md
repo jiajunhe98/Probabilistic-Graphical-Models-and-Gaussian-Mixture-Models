@@ -5,8 +5,16 @@ This repository contains:
 
 - An overview of Gaussian Mixture Models
 - Inference or Learning Methods
+  - EM Algorithm
   - Mean Field Variational Inference
+    - Theoretical Derivation
+    - Python Coding
   - Gibbs Sampling
+    - Theoretical Derivation
+    - Python Coding
+  
+  
+    
 
 
 This page is still being updated...
