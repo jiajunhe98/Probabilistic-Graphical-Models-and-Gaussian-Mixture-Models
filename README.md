@@ -16,6 +16,7 @@ This repository contains:
     - [Python Codes](https://github.com/hejj16/Gaussian-Mixture-Models/blob/main/Codes/GMM_GibbsSampling.py)
   - HM Sampling
   - Gradient Descending VI
+  - ...
   
   
   
