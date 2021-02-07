@@ -10,7 +10,7 @@ This repository contains:
     - Python Codes
   - Mean Field Variational Inference (Coordinate Ascending VI)
     - Theoretical Derivation
-    - Python Codes
+    - [Python Codes](https://www.runoob.com)
   - Gibbs Sampling
     - Theoretical Derivation
     - Python Codes
