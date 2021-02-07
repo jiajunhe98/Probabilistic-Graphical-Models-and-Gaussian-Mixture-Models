@@ -10,7 +10,7 @@ This repository contains:
     - Python Codes
   - Mean Field Variational Inference (Coordinate Ascending VI)
     - Theoretical Derivation
-    - [Python Codes](https://www.runoob.com)
+    - [Python Codes](https://github.com/hejj16/Gaussian-Mixture-Models/blob/main/Codes/GMM_MFVI.py)
   - Gibbs Sampling
     - Theoretical Derivation
     - Python Codes
