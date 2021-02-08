@@ -11,7 +11,7 @@ This repository contains:
   - Mean Field Variational Inference (Coordinate Ascending VI)
     - Theoretical Derivation
     - [Python Codes](https://github.com/hejj16/Gaussian-Mixture-Models/blob/main/Codes/GMM_MFVI.py)
-  - Gibbs Sampling
+  - MCMC: Gibbs Sampling
     - Theoretical Derivation
     - [Python Codes](https://github.com/hejj16/Gaussian-Mixture-Models/blob/main/Codes/GMM_GibbsSampling.py)
   - Gradient Descending VI
