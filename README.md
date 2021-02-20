@@ -7,7 +7,7 @@ This repository contains:
 
 - Notes on Probabilistic Graphical Models: 
   - [Representation](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/PGM-Notes/PGM-Representation-notes.pdf)
-  - Inference
+  - [Inference](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/PGM-Notes/PGM-Inference-notes.pdf)
   - Learning
 - An overview of Gaussian Mixture Models from the perspective of Probabilistic Graphical Models
 - Inference or Learning Methods in Gaussian Mixture Models
