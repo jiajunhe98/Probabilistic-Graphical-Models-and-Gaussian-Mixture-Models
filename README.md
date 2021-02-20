@@ -1,10 +1,15 @@
-# Gaussian-Mixture-Models
+# Probabilistic Graphical Models: Notes and Examples
 
-This repository tries to interpret GMMs from the persperctive of probabilistic graphical models, and using multiple methods to find MAP assignments or parameter estimators.
+This repository summaries notes on Probabilistic Graphical Models from three perspectives: Representation, Inference and Learning. And this repository uses Gaussian Mixture Models as an example to illustrate these basic ideas.
+
+
 This repository contains:
 
-- An overview of Gaussian Mixture Models
-- Inference or Learning Methods
+- Notes on Probabilistic Graphical Models: Representation
+- Notes on Probabilistic Graphical Models: Inference
+- Notes on Probabilistic Graphical Models: Learning
+- An overview of Gaussian Mixture Models from the perspective of Probabilistic Graphical Models
+- Inference or Learning Methods in Gaussian Mixture Models
   - EM Algorithm
     - Theoretical Derivation
     - Python Codes
