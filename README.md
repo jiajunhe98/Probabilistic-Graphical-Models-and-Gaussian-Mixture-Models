@@ -5,9 +5,10 @@ This repository summaries Probabilistic Graphical Models and uses Gaussian Mixtu
 
 This repository contains:
 
-- Notes on Probabilistic Graphical Models: Representation
-- Notes on Probabilistic Graphical Models: Inference
-- Notes on Probabilistic Graphical Models: Learning
+- Notes on Probabilistic Graphical Models: 
+  - Representation
+  - Inference
+  - Learning
 - An overview of Gaussian Mixture Models from the perspective of Probabilistic Graphical Models
 - Inference or Learning Methods in Gaussian Mixture Models
   - EM Algorithm
