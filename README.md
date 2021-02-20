@@ -16,7 +16,7 @@ This repository contains:
     - Python Codes
   - Mean Field Variational Inference (Coordinate Ascending VI)
     - [Theoretical Derivation](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/Theoretical_Derivation/GMM_MFVI.pdf)
-    - [Python Codes](https://github.com/hejj16/Gaussian-Mixture-Models/blob/main/Codes/GMM_MFVI.py)
+    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/Codes/GMM_MFVI.py)
   - MCMC: Gibbs Sampling
     - Theoretical Derivation
     - [Python Codes](https://github.com/hejj16/Gaussian-Mixture-Models/blob/main/Codes/GMM_GibbsSampling.py)
