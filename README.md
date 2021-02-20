@@ -1,6 +1,6 @@
 # Probabilistic Graphical Models: Notes and Examples
 
-This repository summaries notes on Probabilistic Graphical Models from three perspectives: Representation, Inference and Learning. And this repository uses Gaussian Mixture Models as an example to illustrate these basic ideas.
+This repository summaries Probabilistic Graphical Models and uses Gaussian Mixture Models as an example to illustrate these basic ideas.
 
 
 This repository contains:
