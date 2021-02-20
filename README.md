@@ -19,7 +19,7 @@ This repository contains:
     - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/Codes/GMM_MFVI.py)
   - MCMC: Gibbs Sampling
     - Theoretical Derivation
-    - [Python Codes](https://github.com/hejj16/Gaussian-Mixture-Models/blob/main/Codes/GMM_GibbsSampling.py)
+    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/Codes/GMM_GibbsSampling.py)
   - Gradient Descending VI
   - ...
   
