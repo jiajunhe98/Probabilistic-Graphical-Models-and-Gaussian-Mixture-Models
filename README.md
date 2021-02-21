@@ -20,6 +20,9 @@ This repository contains:
   - MCMC: Gibbs Sampling
     - Theoretical Derivation
     - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/Codes/GMM_GibbsSampling.py)
+  - MCMC: Metropolis-Hastings Sampling
+    - Theoretical Derivation
+    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/Codes/GMM_MHSampling.py)
   - Gradient Descending VI
   - ...
   
