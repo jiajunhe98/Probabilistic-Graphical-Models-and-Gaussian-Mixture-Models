@@ -6,8 +6,8 @@ This repository summaries Probabilistic Graphical Models and uses Gaussian Mixtu
 This repository contains:
 
 - Notes on Probabilistic Graphical Models: 
-  - [Representation](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/PGM-Notes/PGM-Representation-notes.pdf)
-  - [Inference](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/PGM-Notes/PGM-Inference-notes.pdf)
+  - [Representation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Representation-notes.pdf)
+  - [Inference](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Inference-notes.pdf)
   - Learning
 - An overview of Gaussian Mixture Models from the perspective of Probabilistic Graphical Models
 - Inference or Learning Methods in Gaussian Mixture Models
@@ -15,14 +15,14 @@ This repository contains:
     - Theoretical Derivation
     - Python Codes
   - Mean Field Variational Inference (Coordinate Ascending VI)
-    - [Theoretical Derivation](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/Theoretical_Derivation/GMM_MFVI.pdf)
-    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/Codes/GMM_MFVI.py)
+    - [Theoretical Derivation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Theoretical_Derivation/GMM_MFVI.pdf)
+    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MFVI.py)
   - MCMC: Gibbs Sampling
     - Theoretical Derivation
-    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/Codes/GMM_GibbsSampling.py)
+    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GibbsSampling.py)
   - MCMC: Metropolis-Hastings Sampling
     - Theoretical Derivation
-    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models_Notes-and-Examples/blob/main/Codes/GMM_MHSampling.py)
+    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MHSampling.py)
   - Gradient Descending VI
   - ...
   - 
