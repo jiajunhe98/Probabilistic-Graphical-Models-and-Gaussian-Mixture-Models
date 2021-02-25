@@ -23,7 +23,9 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - MCMC: Metropolis-Hastings Sampling
     - Theoretical Derivation
     - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MHSampling.py)
-  - (Hamiltonian MC/SVI/VAE...
+  - MCMC: Hamiltonian Monte Carlo
+    - Theoretical Derivation
+    - Python Codes
   - ...
   
   
