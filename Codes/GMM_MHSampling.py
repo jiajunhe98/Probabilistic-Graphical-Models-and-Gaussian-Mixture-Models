@@ -1,6 +1,5 @@
 import numpy as np
 import scipy.stats as ss
-from functools import lru_cache
 
 
 def dnorm(x, mu, sigma):
