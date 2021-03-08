@@ -25,6 +25,17 @@ def posterior_NIW(mu0, lambd, scale, df, data_in_cluster):
 
     return mu0_post, lambd_post, df_post, scale_post
 
+def dGMM(x, pi, alpha, mus, sigmas, mu0, lambd, df, scale, z):
+    log_prob = ss.dirichlet.logpdf(pi, alpha)
+    log_prob += sum([ss.invwishart.logpdf(sigmas[cluster], df=df, scale=scale)
+                     for cluster in range(len(sigmas))])
+    log_prob += sum([ss.multivariate_normal.logpdf(mus[cluster], mu0, sigmas[cluster] / lambd)
+                     for cluster in range(len(sigmas))])
+    log_prob += sum(np.log(pi[z]))
+    log_prob += sum([ss.multivariate_normal.logpdf(x[i], mus[z[i]], sigmas[z[i]])
+                     for i in range(x.shape[0])])
+    return log_prob
+
 
 class GMM_GibbsSampling:
     """
@@ -67,12 +78,15 @@ class GMM_GibbsSampling:
         alpha = np.full((self.n_clusters, ), 2)     # Dirichlet Prior
         mu0, lambd, scale, df = np.zeros(n_dim), 1, np.eye(n_dim), n_dim     # NIW Prior
 
-        # Initialize samples, only need to store samples of z
+        # Initialize samples
         z_sample = self._initialization(data)
         pi_sample = None
         mus_sample = [None] * self.n_clusters
         sigmas_sample = [None] * self.n_clusters
-        z_samples = []
+
+        # Only keep the sample that give the max posterior probability
+        P_MAP = -np.inf
+        self.pi, self.mus, self.sigmas = pi_sample, mus_sample, sigmas_sample
 
         for sample_times in range(n_samples + burning_time):
             # Update pi by sampling
@@ -103,28 +117,12 @@ class GMM_GibbsSampling:
                 [np.argwhere(ss.multinomial.rvs(p=prob[:, j], n=1, size=1).reshape(self.n_clusters) == 1).item()
                  for j in range(n_data)]
             )
+
+            # If mixed, store the sample
             if sample_times >= burning_time:
-                z_samples.append(z_sample)
-
-        # Using samples to estimate z
-        z = ss.mode(np.vstack(z_samples), axis=0)[0][0]
-
-        # Use z to calculate pi, mu, sigma as the mode of the posterior distribution
-        # Update pi as the mode of Dirichlet distribution
-        alpha_post = posterior_dirichlet(alpha, z)
-        self.pi = alpha_post - 1
-        self.pi = self.pi / np.sum(self.pi)
-
-        # Update mu, sigma as the mode of NIW distribution
-        for cluster in range(self.n_clusters):
-            data_in_cluster = data[z == cluster, :]
-
-            # Calculate Posterior NIW Distribution's parameters
-            mu0_post, lambd_post, df_post, scale_post = posterior_NIW(mu0, lambd, scale, df, data_in_cluster)
-
-            # Update mu, sigma as the mode of NIW distribution
-            self.mus[cluster] = mu0_post.reshape((n_dim,))
-            self.sigmas[cluster] = scale_post / (n_dim + df_post + 1)
+                P = dGMM(data, pi_sample, alpha, mus_sample, sigmas_sample, mu0, lambd, df, scale, z_sample)
+                if P > P_MAP:
+                    self.pi, self.mus, self.sigmas, P_MAP = pi_sample, mus_sample, sigmas_sample, P
 
         return self
 

@@ -1,5 +1,6 @@
 import numpy as np
 import scipy.stats as ss
+from functools import lru_cache
 
 
 def dnorm(x, mu, sigma):
@@ -79,10 +80,13 @@ class GMM_MHSampling:
         alpha = np.full((self.n_clusters, ), 2)     # Dirichlet Prior
         mu0, lambd, scale, df = np.zeros(n_dim), 1, np.eye(n_dim), n_dim     # NIW Prior
 
-        # Initialize samples, only need to store samples of z
+        # Initialize samples
         z_sample = self._initialization(data)
         pi_sample, mus_sample, sigmas_sample = self._mode(alpha, mu0, lambd, scale, df, z_sample, data, n_dim)
-        z_samples = []
+
+        # Only keep the sample that give the max posterior probability
+        P_MAP = -np.inf
+        self.pi, self.mus, self.sigmas = pi_sample, mus_sample, sigmas_sample
 
         # Initial some probabilities
         # The probability of getting this current sample
@@ -132,13 +136,8 @@ class GMM_MHSampling:
 
             # If mixed, store the sample
             if sample_times >= burning_time:
-                z_samples.append(z_sample)
-
-        # Using samples to estimate z
-        z = ss.mode(np.vstack(z_samples), axis=0)[0][0]
-
-        # Use z to calculate pi, mu, sigma as the mode of the posterior distribution
-        self.pi, self.mus, self.sigmas = self._mode(alpha, mu0, lambd, scale, df, z, data, n_dim)
+                if P_old > P_MAP:
+                    self.pi, self.mus, self.sigmas, P_MAP = pi_sample, mus_sample, sigmas_sample, P_old
 
         return self
 
