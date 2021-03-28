@@ -8,7 +8,7 @@ This repository summaries basic principles and technologies in Probabilistic Gra
 - Notes on Probabilistic Graphical Models: 
   - [Representation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Representation-notes.pdf)
   - [Inference](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Inference-notes.pdf)
-  - Learning
+  - [Learning]()
 - An overview of Gaussian Mixture Models from the perspective of Probabilistic Graphical Models
 - Inference or Learning Methods in Gaussian Mixture Models
   - EM Algorithm
