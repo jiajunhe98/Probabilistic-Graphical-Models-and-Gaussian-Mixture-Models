@@ -12,8 +12,8 @@ This repository summaries basic principles and technologies in Probabilistic Gra
 - An overview of Gaussian Mixture Models from the perspective of Probabilistic Graphical Models
 - Inference or Learning Methods in Gaussian Mixture Models
   - EM Algorithm
-    - [Theoretical Derivation]
-    - [Python Codes]
+    - Theoretical Derivation
+    - Python Codes
   - Mean Field Variational Inference (Coordinate Ascending VI)
     - [Theoretical Derivation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Theoretical_Derivation/GMM_MFVI.pdf)
     - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MFVI.py)
