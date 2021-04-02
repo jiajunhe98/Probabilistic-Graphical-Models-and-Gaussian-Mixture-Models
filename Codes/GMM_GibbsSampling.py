@@ -25,6 +25,7 @@ def posterior_NIW(mu0, lambd, scale, df, data_in_cluster):
 
     return mu0_post, lambd_post, df_post, scale_post
 
+
 def dGMM(x, pi, alpha, mus, sigmas, mu0, lambd, df, scale, z):
     log_prob = ss.dirichlet.logpdf(pi, alpha)
     log_prob += sum([ss.invwishart.logpdf(sigmas[cluster], df=df, scale=scale)
@@ -42,7 +43,7 @@ class GMM_GibbsSampling:
     GMM by Gibbs Sampling.
 
     Methods:
-        fit(data, max_iter): Fit the model to data.
+        fit(data, n_samples, burning_time): Fit the model to data.
         predict(x): Predict cluster labels for x.
     """
 

@@ -1,6 +1,5 @@
 import numpy as np
 import scipy.stats as ss
-from functools import lru_cache
 
 
 def dnorm(x, mu, sigma):
@@ -44,7 +43,7 @@ class GMM_MHSampling:
     GMM by MH Sampling.
 
     Methods:
-        fit(data, max_iter): Fit the model to data.
+        fit(data, n_samples, burning_time): Fit the model to data.
         predict(x): Predict cluster labels for x.
     """
 
