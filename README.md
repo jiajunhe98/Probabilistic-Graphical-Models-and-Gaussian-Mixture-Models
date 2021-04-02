@@ -11,13 +11,14 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - [Learning](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Learning-notes.pdf)
 - An overview of Gaussian Mixture Models from the perspective of Probabilistic Graphical Models
 
-- Inference or Learning Methods in Gaussian Mixture Models
+- Learning in Gaussian Mixture Models (Frequentist Approaches)
   - EM Algorithm
     - Theoretical Derivation
     - Python Implementation
   - Constrained Gradient Descent
     - Theoretical Derivation
     - [Python Implementation(Pytorch)](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GradientDescent_Pytorch.py)
+- Inference in Gaussian Mixture Models (Bayesian Approaches)
   - Mean Field Variational Inference (Coordinate Ascending VI)
     - [Theoretical Derivation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Theoretical_Derivation/GMM_MFVI.pdf)
     - [Python Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MFVI.py)
