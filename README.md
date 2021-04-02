@@ -14,23 +14,22 @@ This repository summaries basic principles and technologies in Probabilistic Gra
 - Inference or Learning Methods in Gaussian Mixture Models
   - EM Algorithm
     - Theoretical Derivation
-    - Python Codes
-  - Gradient Descent
+    - Python Implementation
+  - Constrained Gradient Descent
     - Theoretical Derivation
-    - Python Codes
-    - Pytorch Codes
+    - Python Implementation
   - Mean Field Variational Inference (Coordinate Ascending VI)
     - [Theoretical Derivation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Theoretical_Derivation/GMM_MFVI.pdf)
-    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MFVI.py)
+    - [Python Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MFVI.py)
   - MCMC: Gibbs Sampling
     - Theoretical Derivation
-    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GibbsSampling.py)
+    - [Python Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GibbsSampling.py)
   - MCMC: Metropolis-Hastings Sampling
     - Theoretical Derivation
-    - [Python Codes](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MHSampling.py)
+    - [Python Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MHSampling.py)
   - MCMC: Hamiltonian Monte Carlo
     - Theoretical Derivation
-    - Python Codes
+    - Python Implementation
   - ...
   
   
