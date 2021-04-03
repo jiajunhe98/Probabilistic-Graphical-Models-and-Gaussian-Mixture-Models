@@ -32,7 +32,6 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - MCMC: Hamiltonian Monte Carlo
     - Theoretical Derivation
     - Python Implementation
-  - ...
   
   
   
