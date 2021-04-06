@@ -14,7 +14,7 @@ This repository summaries basic principles and technologies in Probabilistic Gra
 - Learning in Gaussian Mixture Models (Frequentist Approaches)
   - EM Algorithm
     - Theoretical Derivation
-    - Python Implementation
+    - [Python Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_EM.py)
   - Stochastic EM Algorithm
     - Theoretical Derivation
     - Python Implementation
