@@ -12,7 +12,7 @@ class GMM_EM:
     GMM by EM.
 
     Methods:
-        fit(data, n_samples, burning_time): Fit the model to data.
+        fit(data, max_iter, threshold): Fit the model to data.
         predict(x): Predict cluster labels for x.
     """
 
@@ -36,7 +36,8 @@ class GMM_EM:
 
         Args:
             data: Array-like, shape (n_samples, n_dim)
-            max_iter(int)
+            max_iter: maximum number of EM steps.
+            threshold: threshold to step iteration.
         """
 
         assert data.ndim == 2
