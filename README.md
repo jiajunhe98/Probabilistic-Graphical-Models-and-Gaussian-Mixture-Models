@@ -15,6 +15,9 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - EM Algorithm
     - Theoretical Derivation
     - Python Implementation
+  - Stochastic EM Algorithm
+    - Theoretical Derivation
+    - Python Implementation
   - Maximize Likelihood Estimation (by Gradient Descent)
     - [Theoretical Derivation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Theoretical_Derivation/GMM_MLE.pdf)
     - [Python Implementation(Pytorch)](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GradientDescent_Pytorch.py)
