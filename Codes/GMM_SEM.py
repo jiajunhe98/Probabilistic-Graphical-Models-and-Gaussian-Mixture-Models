@@ -59,11 +59,12 @@ class GMM_SEM:
             log_p -= sum_p
             p = np.exp(log_p)
             z = np.zeros(n_data)
+            # Sample z
             for j in range(n_data):
                 prob = np.around(p[:, j], 8)
                 z[j] = np.argwhere(ss.multinomial.rvs(p=prob / np.sum(prob), n=1, size=1).reshape(self.n_clusters) == 1).item()
 
-            # M-step
+            # M-step: Update parameters by sampled z
             self.pi = np.array([np.mean(z == cluster) for cluster in range(self.n_clusters)])
             self.mus = [np.mean(data[z == cluster, :], axis=0) for cluster in range(self.n_clusters)]
             self.sigmas = [np.cov(data[z == cluster, :].T) for cluster in range(self.n_clusters)]
