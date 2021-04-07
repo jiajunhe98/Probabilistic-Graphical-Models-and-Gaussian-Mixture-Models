@@ -11,6 +11,7 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - [Learning](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Learning-notes.pdf)
 - An overview of Gaussian Mixture Models from the perspective of Probabilistic Graphical Models
 
+
 - Learning in Gaussian Mixture Models (Frequentist Approaches)
   - EM Algorithm
     - Theoretical Derivation
