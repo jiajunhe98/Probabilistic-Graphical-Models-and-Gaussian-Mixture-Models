@@ -58,8 +58,8 @@ class GMM_SEM:
             sum_p = np.log(np.sum(np.exp(log_p - max_p), axis=0)) + max_p
             log_p -= sum_p
             p = np.exp(log_p)
-            z = np.zeros(n_data)
             # Sample z
+            z = np.zeros(n_data)
             for j in range(n_data):
                 prob = np.around(p[:, j], 8)
                 z[j] = np.argwhere(ss.multinomial.rvs(p=prob / np.sum(prob), n=1, size=1).reshape(self.n_clusters) == 1).item()
