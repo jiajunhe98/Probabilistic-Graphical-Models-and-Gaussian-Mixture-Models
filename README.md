@@ -15,15 +15,16 @@ This repository summaries basic principles and technologies in Probabilistic Gra
 - Learning in Gaussian Mixture Models (Frequentist Approaches)
   - Maximize Likelihood Estimation by EM Algorithm
     - Theoretical Derivation
-    - [Python Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_EM.py)
-  - Maximize Likelihood Estimation by Stochastic EM Algorithm 
-    - Theoretical Derivation
-    - [Python Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_SEM.py)
+    - [Python Implementation: Standard EM](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_EM.py)
+    - [Python Implementation: Stochastic EM](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_SEM.py)
   - Maximize Likelihood Estimation by Gradient Descent
     - [Theoretical Derivation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Theoretical_Derivation/GMM_MLE.pdf)
     - [Python Implementation(Pytorch)](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GradientDescent_Pytorch.py)
     
 - Inference in Gaussian Mixture Models (Bayesian Approaches)
+  - MAP Estimation by EM Algorithm
+    - Theoretical Derivation
+    - Python Implementation
   - Mean Field Variational Inference (Coordinate Ascending VI)
     - [Theoretical Derivation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Theoretical_Derivation/GMM_MFVI.pdf)
     - [Python Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MFVI.py)
