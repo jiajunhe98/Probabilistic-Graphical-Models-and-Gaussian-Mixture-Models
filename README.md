@@ -22,6 +22,9 @@ This repository summaries basic principles and technologies in Probabilistic Gra
     - [Python Implementation(Pytorch)](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GradientDescent_Pytorch.py)
     
 - Inference in Gaussian Mixture Models (Bayesian Approaches)
+  - Likelihood Weighted Sampling
+    - Theoretical Derivation
+    - Python Implementation
   - Data Augmentation Algorithm
     - Theoretical Derivation
     - [Python Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_DataAugmentation.py)
