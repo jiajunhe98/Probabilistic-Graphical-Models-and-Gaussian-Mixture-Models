@@ -3,7 +3,11 @@
 This repository summaries basic principles and technologies in Probabilistic Graphical Models and uses Gaussian Mixture Models as an example to illustrate these basic ideas. Comments and discussion are highly appreciated!
 
 
-**This repository contains**:
+
+
+**This repository contains**: 
+
+***Updating On Going...***
 
 - Notes on Probabilistic Graphical Models: 
   - [Representation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Representation-notes.pdf)
@@ -21,5 +25,5 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - **[PyTorch]** [Hamiltonian Monte Carlo](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_HMC_Pytorch.py)
 
 
-***Updating On Going...***
+
   
