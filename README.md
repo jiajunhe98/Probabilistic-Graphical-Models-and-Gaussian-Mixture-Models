@@ -11,8 +11,8 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - [Learning](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Learning-notes.pdf)
 
 - Learning & Inference in Gaussian Mixture Models:
-  - (python) [Maximize Likelihood Estimation by EM Algorithm](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_EM.py)
-  - (python) [Maximize Likelihood Estimation by Stochastic EM Algorithm](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_SEM.py)
+  - [python] [Maximize Likelihood Estimation by EM Algorithm](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_EM.py)
+  - [python] [Maximize Likelihood Estimation by Stochastic EM Algorithm](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_SEM.py)
   - (pytorch) [Maximize Likelihood Estimation by Gradient Descent](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GradientDescent_Pytorch.py)
   - (python) [Data Augmentation Algorithm](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_DataAugmentation.py)
   - (python) [Mean Field Variational Inference](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MFVI.py)
