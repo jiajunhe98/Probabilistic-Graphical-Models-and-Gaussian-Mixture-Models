@@ -7,7 +7,7 @@ This repository summaries basic principles and technologies in Probabilistic Gra
 
 **This repository contains**: 
 
-***Updating On Going...***
+
 
 - Notes on Probabilistic Graphical Models: 
   - [Representation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Representation-notes.pdf)
@@ -26,4 +26,4 @@ This repository summaries basic principles and technologies in Probabilistic Gra
 
 
 
-  
+  ***Updating On Going...***
