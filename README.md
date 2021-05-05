@@ -26,4 +26,4 @@ This repository summaries basic principles and technologies in Probabilistic Gra
 
 
 
-  ***Updating On Going...***
+***...Being Updated...***
