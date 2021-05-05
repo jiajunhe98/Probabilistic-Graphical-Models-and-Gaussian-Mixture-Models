@@ -1,4 +1,4 @@
-# Probabilistic Graphical Models: Notes and Examples
+# Probabilistic Graphical Models & Gaussian Mixture Models
 
 This repository summaries basic principles and technologies in Probabilistic Graphical Models and uses Gaussian Mixture Models as an example to illustrate these basic ideas.
 
