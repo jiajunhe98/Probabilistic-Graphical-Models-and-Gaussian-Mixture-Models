@@ -10,7 +10,7 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - [Inference](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Inference-notes.pdf)
   - [Learning](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Learning-notes.pdf)
 
-- Learning & Inference in Gaussian Mixture Models (implemented by python with numpy/scipy/pytorch)
+- Learning & Inference in Gaussian Mixture Models (implemented by Python with NumPy/scipy/PyTorch)
   - [Maximize Likelihood Estimation by EM Algorithm](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_EM.py)
   - [Maximize Likelihood Estimation by Stochastic EM Algorithm](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_SEM.py)
   - [pytorch][Maximize Likelihood Estimation by Gradient Descent](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GradientDescent_Pytorch.py)
