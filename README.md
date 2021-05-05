@@ -9,14 +9,13 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - [Representation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Representation-notes.pdf)
   - [Inference](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Inference-notes.pdf)
   - [Learning](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Learning-notes.pdf)
-- An overview of Gaussian Mixture Models from the perspective of Probabilistic Graphical Models
 
 - Learning & Inference in Gaussian Mixture Models
   - Maximize Likelihood Estimation by EM Algorithm
     - [Python Implementation: Standard EM](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_EM.py)
     - [Python Implementation: Stochastic EM](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_SEM.py)
   - Maximize Likelihood Estimation by Gradient Descent
-    - [Python Implementation(Pytorch)](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GradientDescent_Pytorch.py)
+    - [Pytorch Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GradientDescent_Pytorch.py)
   - Data Augmentation Algorithm
     - [Python Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_DataAugmentation.py)
   - Mean Field Variational Inference (Coordinate Ascending VI)
@@ -26,7 +25,7 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - MCMC: Metropolis-Hastings Sampling
     - [Python Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MHSampling.py)
   - MCMC: Hamiltonian Monte Carlo
-    - [Python Implementation(Pytorch)](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_HMC_Pytorch.py)
+    - [Pytorch Implementation](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_HMC_Pytorch.py)
   
   
   
