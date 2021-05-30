@@ -1,7 +1,6 @@
 import numpy as np
 import scipy.stats as ss
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 
 def dnorm(x, mu, sigma):
     sigma += np.eye(sigma.shape[0]) * 1e-8
