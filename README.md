@@ -5,7 +5,7 @@ This repository summaries basic principles and technologies in Probabilistic Gra
 
 
 
-**This repository contains**: 
+## **This repository contains**: 
 
 
 
