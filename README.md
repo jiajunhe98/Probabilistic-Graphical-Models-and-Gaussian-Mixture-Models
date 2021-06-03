@@ -23,6 +23,6 @@ This repository summaries basic principles and technologies in Probabilistic Gra
 
 **with PyTorch/Pyro:**
   - **[PyTorch]** [Maximize Likelihood Estimation by Gradient Descent](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GradientDescent_Pytorch.py)
-  - **[Pyro]** [Stochastic Variational Inference](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_SVI.py)
   - **[PyTorch]** [Hamiltonian Monte Carlo](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_HMC_Pytorch.py)
+  - **[Pyro]** [Stochastic Variational Inference](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_SVI.py)
 
