@@ -14,9 +14,9 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - [Inference](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Inference-notes.pdf)
   - [Learning](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/PGM-Notes/PGM-Learning-notes.pdf)
 
-## Learning & Inference in Gaussian Mixture Models:
+## Learning & Inference in Gaussian Mixture Models Implemented in Python
 
-**Implemented in Python with NumPy/SciPy**
+**with NumPy/SciPy**
   - [Maximize Likelihood Estimation by EM Algorithm](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_EM.py)
   - [Maximize Likelihood Estimation by Stochastic EM Algorithm](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_SEM.py)
   - [Data Augmentation Algorithm](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_DataAugmentation.py)
@@ -25,7 +25,7 @@ This repository summaries basic principles and technologies in Probabilistic Gra
   - [Metropolis-Hastings Sampling](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_MHSampling.py)
 
 
-**Implemented in Python with PyTorch/Pyro**
+**with PyTorch/Pyro**
   - **[PyTorch]** [Maximize Likelihood Estimation by Gradient Descent](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_GradientDescent_Pytorch.py)
   - **[Pyro]** [Stochastic Variational Inference](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_SVI.py)
   - **[PyTorch]** [Hamiltonian Monte Carlo](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models/blob/main/Codes/GMM_HMC_Pytorch.py)
